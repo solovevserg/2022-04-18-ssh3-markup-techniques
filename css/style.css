@@ -1,0 +1,138 @@
+:root {
+    /* Цвета и градиенты */
+    --color-bg: #ffffff;
+    --color-bg-alt: #ffede9;
+
+    --color-title: #0a004a;
+    --color-text: #8b8b8b;
+    --color-button: #210095;
+
+    --color-accent-1: #613fb7;
+    --color-accent-2: #fa7279;
+    --color-accent-3: #ffcb5b;
+
+    --color-additional-1: #d1fbf7;
+    --color-additional-2: #828ce4;
+
+    /* Типографика */
+    --font-size-body: 18px;
+    --font-size-h1: 64px;
+    --font-size-h2: 48px;
+    --font-size-h3: 24px;
+    --font-size-button: 18px;
+    --font-size-caption: 12px;
+
+    /* Отступы */
+    --indent: 25px;
+    --content-max-width: 1200px;
+
+    /* Геометрия */
+    --radius: 10px;
+
+    /* Анимация */
+    --transition: 0.25s ease-in-out;
+}
+
+/* Global Stlyes */
+
+body {
+    font-family: "Poppins";
+    margin: 0;
+}
+
+/* UI Kit */
+
+body {
+    font-size: var(--font-size-body);
+    font-weight: 500; /*  TODO: Заглутить */
+    line-height: 200%;
+    color: var(--color-text);
+}
+
+h1,h2,h3,h4 {
+    color: var(--color-title);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    line-height: 110%;
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: 150%;
+}
+
+p {
+    max-width: 510px;
+}
+
+/* Вспомогательные классы */
+
+.container {
+    padding: 0 var(--indent);
+    max-width: var(--content-max-width);
+    margin: auto;
+}
+
+/* WELCOME */
+
+.welcome {
+    background-color: var(--color-bg-alt);
+    min-height: 100vh;
+}
+
+/* BENEFITS */
+
+.benefits__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.benefits__title {
+    margin-top: 170px;
+    margin-bottom: 30px;
+}
+
+.benefits__items {
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    gap: 170px;
+}
+.benefits__item {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits__item-icon {
+    border-radius: var(--radius);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits__item-icon--home {
+    background-color: var(--color-accent-1);
+}
+
+.benefits__item-icon--conversation {
+    background-color: var(--color-accent-2);    
+}
+
+.benefits__item-icon--live {
+    background-color: var(--color-accent-3);
+
+}
+
+/* TEACHERS */
+
+.teachers {
+    min-height: 100vh;
+}
